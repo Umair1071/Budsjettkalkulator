@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+    text-align: center;
+}
+
+
+h1 {
+font-size: 50px;
+margin-bottom: 100px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.boks {
+    background-color: white;
+    padding: 30px;
+    min-height: 500px;
+    margin: 20px auto;
+    max-width: 750px;
+    border-radius: 20px;
+}
+
+
