@@ -4,24 +4,41 @@ body {
     text-align: center;
 }
 
-
 h1 {
 font-size: 50px;
 margin-bottom: 100px;
 }
 
 h2 {
-    font-size: 35px;
-    margin-top: 10px;
+    font-size: 25px;
 }
 
 .boks {
-    background-color: white;
+    background-color: rgb(223, 221, 221);
     padding: 30px;
     min-height: 500px;
     margin: 20px auto;
     max-width: 750px;
     border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inntekt, .utgift {
+    width: 70%;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+}
+
+.inntekt p, .utgift p {
+    margin-top: 30px;
+}
+
+.inntekt, .utgift {
+    width: 45%;
 }
 
 

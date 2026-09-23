@@ -6,19 +6,37 @@
     <title>Budsjettkalkulator</title> <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header> <h1>Budsjettkalkulator</h1></header>
-
-    
-
+    <header> 
+        <h1>Budsjettkalkulator</h1>
+    </header>
     <div class="boks">
-     <h2>Inntekt</h2>   
-    
-    </div>
+
+    <div class="inntekt">
+        <h2>Inntekt</h2>
+
+        <p>Navn på inntekt</p>
+        <input type="text" id="inntektNavn" placeholder="Inntekt">
+
+        <p>Beløp</p>
+        <input type="number" id="inntektBelop" placeholder="0">
+
+        <button id="leggTilInntekt">Legg til inntekt</button>
+     </div>
+
+        <div class="utgift">
+        <h2>Utgift</h2>
+
+        <p>Navn på utgift</p>
+        <input type="text" id="utgiftNavn" placeholder="Utgift">
+
+        <p>Beløp</p>
+        <input type="number" id="utgiftBelop" placeholder="0">
+
+        <button id="leggTilUtgift">Legg til utgift</button>
+        </div>
+
+</div>
    
-
-   
-
-
 
      <script src="script.js"></script> 
 
