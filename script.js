@@ -8,6 +8,7 @@ inntektKnapp.addEventListener("click", function() {
 
     const navn = document.getElementById("inntektNavn").value
     const belop = Number(document.getElementById("inntektBelop").value)
+    const type = document.getElementById("inntektType").value
 
     if (navn == "" || belop <= 0) {
         return
@@ -15,11 +16,12 @@ inntektKnapp.addEventListener("click", function() {
 
     inntekter.push({
         navn: navn,
-        belop: belop
+        belop: belop,
+        type: type
     })
 
     document.getElementById("inntekter").innerHTML +=
-        "<p>" + navn + ": " + belop + " kr</p>"
+        "<p>" + navn + ": " + belop + " kr - " + type + "</p>"
 
     document.getElementById("inntektNavn").value = ""
     document.getElementById("inntektBelop").value = ""
@@ -27,11 +29,11 @@ inntektKnapp.addEventListener("click", function() {
     beregnBudsjett()
 })
 
-
 utgiftKnapp.addEventListener("click", function() {
 
     const navn = document.getElementById("utgiftNavn").value
     const belop = Number(document.getElementById("utgiftBelop").value)
+    const type = document.getElementById("utgiftType").value
 
     if (navn == "" || belop <= 0) {
         return
@@ -39,18 +41,18 @@ utgiftKnapp.addEventListener("click", function() {
 
     utgifter.push({
         navn: navn,
-        belop: belop
+        belop: belop,
+        type: type
     })
 
     document.getElementById("utgifter").innerHTML +=
-        "<p>" + navn + ": " + belop + " kr</p>"
+        "<p>" + navn + ": " + belop + " kr - " + type + "</p>"
 
     document.getElementById("utgiftNavn").value = ""
     document.getElementById("utgiftBelop").value = ""
 
     beregnBudsjett()
 })
-
 
 function beregnBudsjett() {
 
