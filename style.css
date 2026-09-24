@@ -16,7 +16,7 @@ h2 {
 .boks {
     background-color: rgb(223, 221, 221);
     padding: 30px;
-    min-height: 500px;
+    min-height: 350px;
     margin: 20px auto;
     max-width: 750px;
     border-radius: 20px;
@@ -39,6 +39,14 @@ input {
 
 .inntekt, .utgift {
     width: 45%;
+}
+
+.resultat {
+    background-color: white;
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 

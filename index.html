@@ -1,44 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budsjettkalkulator</title> <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header> 
-        <h1>Budsjettkalkulator</h1>
+
+    <header>
+    <h1>Budsjettkalkulator</h1>
     </header>
+
     <div class="boks">
 
     <div class="inntekt">
-        <h2>Inntekt</h2>
+    <h2>Inntekt</h2>
 
-        <p>Navn på inntekt</p>
-        <input type="text" id="inntektNavn" placeholder="Inntekt">
+    <p>Navn på inntekt</p>
+    <input type="text" id="inntektNavn" placeholder="Inntekt">
 
-        <p>Beløp</p>
-        <input type="number" id="inntektBelop" placeholder="0">
+    <p>Beløp</p>
+    <input type="number" id="inntektBelop" placeholder="0">
 
-        <button id="leggTilInntekt">Legg til inntekt</button>
-     </div>
+    <button id="leggTilInntekt">Legg til inntekt</button>
 
-        <div class="utgift">
-        <h2>Utgift</h2>
+    <div id="inntekter"></div>
+    </div>
 
-        <p>Navn på utgift</p>
-        <input type="text" id="utgiftNavn" placeholder="Utgift">
+    <div class="utgift">
+    <h2>Utgift</h2>
 
-        <p>Beløp</p>
-        <input type="number" id="utgiftBelop" placeholder="0">
+    <p>Navn på utgift</p>
+    <input type="text" id="utgiftNavn" placeholder="Utgift">
 
-        <button id="leggTilUtgift">Legg til utgift</button>
-        </div>
+    <p>Beløp</p>
+    <input type="number" id="utgiftBelop" placeholder="0">
 
-</div>
-   
+    <button id="leggTilUtgift">Legg til utgift</button>
 
-     <script src="script.js"></script> 
+    <div id="utgifter"></div>
+    </div>
+
+    </div>
+
+    <div class="resultat">
+    <h2>Resultat</h2>
+
+    <p>Totale inntekter: <span id="totalInntekt">0</span> kr</p>
+    <p>Totale utgifter: <span id="totalUtgift">0</span> kr</p>
+    <p>Saldo: <span id="saldo">0</span> kr</p>
+    </div>
+
+        <script src="script.js"></script>
 
 </body>
 </html>
